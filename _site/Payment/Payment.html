@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Armageddon Paintball Shop:Payment</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Payment.css">
-    <link rel="icon" href="/Images/Armageddon Shop logo redone 1-1.jpg">
+    <link rel="icon" href="/Images/ArmageddonShoplogoredone1-1.jpg"> <!--Icon for browser tab window-->
 </head>
 
 <body>
     <!-- Header Section -->
     <div class="header navMiddle">
-    <!-- <img href="" class="logo" src="/Images/Armageddon Shop logo horizontal.png"> -->
-    <a href="/home_page/home.html#">
-        <img class="logo" src="/Images/Armageddon Shop logo horizontal.png" alt="Armageddon paintball shop logo">
-    </a>
-    <div></div>
-    <ul class="main-hed">
-        <i id="dropDownclick" class="fas fa-bars" onclick="openNav()"></i>
-        <li><a class="head" href="/Payment/Payment.html"><i
-                    class="fas fa-shopping-cart"></i></a></li>
-        <li><a class="head" href="/Log in/Log in.html">Sign up/ Log in</a></li>
-        <li><a class="head" href="/Product/Product.html">Products</a></li>
-    </ul>
-</div>
+        <a href="/home_page/home.html">
+            <img class="logo" src="/Images/ArmageddonShoplogohorizontal.png" alt="Armageddon paintball shop logo">
+        </a>
+        <div></div>
+        <ul class="main-hed"> <!--Header Nav Bar-->
+            <li id="dropDownclick" class="fas fa-bars" onclick="openNav()"></li>
+            <li><a class="head" href="/Payment/Payment.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a class="head" href="/Login/Login.html">Sign up/ Log in</a></li>
+            <li><a class="head" href="/Product/Product.html">Products</a></li>
+        </ul>
+    </div>
 
     <!-- Side Nav Section -->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav"> <!--Hamburger Menu (hidden until responsive)-->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/home_page/home.html">Home</a>
         <a href="/Product/Product.html">Products</a>
-        <a href="/Log in/Log in.html">Sign up/ Log in</a>
+        <a href="/Login/Login.html">Sign up/ Log in</a>
         <a href="/Payment/Payment.html">Cart</a>
     </div>
     <!-- End Side Nav Section -->
-<!-- End Header Section -->
+    <!-- End Header Section -->
 
     <!-- Main Section -->
     <div class="Payment">
         <div class="payicons">
-            <h1>Payment Method</h1>
-            <div class="icons">
+            <h1>Payment Method</h1> <!--Title-->
+            <div class="icons">   <!--Payment Icons-->
                 <i class="fab fa-cc-visa"></i>
                 <i class="fab fa-cc-mastercard"></i>
                 <i class="fab fa-cc-apple-pay"></i>
@@ -52,26 +50,24 @@
         <div class="paybox">
             <div class="payl">
                 <h3 class="cardh">CARD TYPE</h3>
-                <!-- <input class="cardb" type="text" placeholder="Card Type"> -->
-                <select>
+                <select> <!--Card type selection box-->
                     <option value="" disabled selected>Select your option</option>
                     <option value="Visa">Visa</option>
                     <option value="Mastercard">Mastercard</option>
                     <option value="Apple pay">Apple pay</option>
                 </select>
-                <h3 class="nameh">NAME ON CARD </h3>
+                <h3 class="nameh">NAME ON CARD </h3> <!--Name on card input box-->
                 <input class="nameb" type="text" placeholder="Name on card">
             </div>
             <div class="paym">
-                <h3 class="cnumh">CARD NUMBER</h3>
+                <h3 class="cnumh">CARD NUMBER</h3> <!--Card number input box-->
                 <input class="cnumb" type="text" placeholder="Card Number">
-                <h3 class="cvch">CVC</h3>
+                <h3 class="cvch">CVC</h3> <!--CVC input box-->
                 <input class="cvcb" type="text" placeholder="CVC" maxlength="3">
             </div>
             <div class="payr">
                 <h3 class="exph">EXPIRATION DATE</h3>
-                <!-- <input class="expb" type="text" placeholder="Expiration Date"> -->
-                <select>
+                <select> <!-- Expiration date on card selection box-->
                     <option value="" disabled selected>Select your option</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -87,8 +83,7 @@
                     <option value="12">12</option>
                 </select>
                 <h3 class="expih">EXPIRATION YEAR</h3>
-                <!-- <input class="expib" type="text" placeholder="Expiration Year"> -->
-                <select>
+                <select> <!--Expiration year on card selection box-->
                     <option value="" disabled selected>Select your option</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
@@ -100,53 +95,46 @@
             </div>
         </div>
         <div class="btn">
-        <div class="btnright">
-            <button class="btnnext" type="button">Next</button>
+            <div class="btnright"> <!--Next submit button-->
+                <button class="btnnext" type="button">Next</button>
+            </div>
+            <div class="btnleft"> <!--Previous submit button-->
+                <button class="btnprevious" type="button">Previous</button>
+            </div>
         </div>
-        <div class="btnleft">
-            <button class="btnprevious" type="button">Previous</button>
-        </div>
-        </div>
-
-
-
     </div>
     <!-- End Main Section -->
 
     <!-- Footer  -->
     <div class="Footer">
         <div class="footer-left">
-            <div class="logopos"><img class="logof" src="/Images/Armageddon Shop logo redone-white.png">
+            <div class="logopos"><img class="logof" src="/Images/ArmageddonShoplogoredone-white.png" alt="Footer Logo">
                 <p id="fl" style="color:white;">Need the best gear in the game then look no further!</p>
             </div>
-
         </div>
-
         <div class="footer-middle">
-            <div><a class="fm">General</a><br>
+            <div><a class="fm">General</a><br> <!--Footer Navigation-->
                 <a class="fm" href="/Product/Product.html">Products</a><br></div>
-            <div><a class="fm" href="/Log in/Log in.html">Signup/ Login</a><br>
+            <div><a class="fm" href="/Login/Login.html">Signup/ Login</a><br>
                 <a class="fm" href="/Payment/Payment.html">Cart</a></div>
         </div>
-
-        <div class="footer-right">
+        <div class="footer-right"> <!--Contact inforamtion Area-->
             <div>
                 <a class="fr">
                     Contact us<br><br>Need help with something?<br>Get in touch.<br><br>
                 </a>
-                <a class="fr" href="mailto: paintball.nelson@xtra.co.nz" target="_blank"
-                    class="contact-details">paintball.nelson@xtra.co.nz</a><br><br>
-                <a class="fr" href="tel: +64 3 541 8452" target="_blank" class="contact-details">03 541 8452</a><br><br>
-                <a class="fr" id="fricon" href="https://www.facebook.com/Armageddonpbnz/" target="_blank"
-                    class="contact-details">
-                    <i class="fab fa-facebook-square" class="contact-icon"></i>
+                <a class="fr" href="mailto:paintball.nelson@xtra.co.nz" target="_blank">
+                    paintball.nelson@xtra.co.nz</a><br><br>
+                <a class="fr" href="tel:+6435418452" target="_blank">03 541 8452</a><br><br>
+                <a class="fr" id="fricon" href="https://www.facebook.com/Armageddonpbnz/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
                 </a>
-                <a class="fr" id="fricon" href="https://www.youtube.com/channel/UCKRhmADWDk8Iqz3KjMfqsFg"
-                    target="_blank" class="contact-details">
-                    <i class="fab fa-youtube-square" class="contact-icon"></i>
+                <a class="fr" id="fricon2" href="https://www.youtube.com/channel/UCKRhmADWDk8Iqz3KjMfqsFg"
+                    target="_blank">
+                    <i class="fab fa-youtube-square"></i>
                 </a>
-                <a class="fr" id="fricon" href="" target="_blank" class="contact-details">
-                    <i class="fab fa-twitter-square" class="contact-icon"></i>
+                <a class="fr" id="fricon3" href="" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
                 </a>
             </div>
             <p class="fl1" id="copyright">
@@ -155,8 +143,6 @@
         </div>
     </div>
     <!-- End Footer Section -->
-
-
     <script src="Payment.js" async defer></script>
     <script src="https://kit.fontawesome.com/ecb28debc0.js" crossorigin="anonymous"></script>
 </body>

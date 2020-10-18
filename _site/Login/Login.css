@@ -22,6 +22,7 @@ font-size: 25px;
 color: #000000;
 display: block;
 transition: 0.3s;
+font-family: sans-serif;
 }
 
 .sidenav a:hover {
@@ -178,7 +179,7 @@ input {
 }
 
 .btnlogin {
-    font-size: 25px;
+    font-size: 20px;
     font-family: sans-serif;
     border: none;
     background-color: #dbdbdb;
@@ -262,6 +263,15 @@ a#fricon.fr {
     color: white;
 }
 
+a#fricon2.fr {
+    font-size: 40px;
+    color: white;
+}
+
+a#fricon3.fr {
+    font-size: 40px;
+    color: white;
+}
 
 a.fm {
     text-decoration: none;
@@ -287,17 +297,11 @@ display:block;
 }
 
 .footer-middle a{
-    /* padding: 0 80px; */
     text-align: center;
 }
 /* End FOOTER Section */
 
-/* Media Querries */
-/* @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    } */
-
+/* Media Querries for mobile views */
 @media screen and (max-width: 660px){
 .header {
     grid-template-columns: 260px auto;
@@ -333,4 +337,56 @@ display:block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
+}
+
+@media screen and (max-width: 1290px){
+    .btnlogin {
+        font-size: 20px;
+        font-family: sans-serif;
+        border: none;
+        background-color: #dbdbdb;
+        cursor: pointer;
+        outline: none;
+        width: auto;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px #999;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .login-box {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        font-family: sans-serif;
+        margin: 0;
+        justify-items: center;
+    }
+
+    .login-box-left {
+        padding: 10px;
+        border: 1px solid #474747;
+        border-radius: 4px;
+        background-color: #fafafa;
+        justify-self: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .login-box-right {
+        padding: 10px;
+        border: 1px solid #474747;
+        border-radius: 4px;
+        background-color: #fafafa;
+        justify-self: center;
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: smaller;
+    }
+
+    input {
+        font-size: 23px;
+    }
 }

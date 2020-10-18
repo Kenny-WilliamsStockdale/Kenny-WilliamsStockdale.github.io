@@ -22,6 +22,7 @@ font-size: 25px;
 color: #000000;
 display: block;
 transition: 0.3s;
+font-family: sans-serif;
 }
 
 .sidenav a:hover {
@@ -133,11 +134,12 @@ a.head {
     position: absolute;
 }
 
+/* Flippy Card Section */
+
 .scene {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 450px 450px 450px;
-    /* width: 1440px; */
     max-width: 100%;
     min-height: 100vh;
     margin: auto;
@@ -248,13 +250,8 @@ h1 {
 input:checked + .card {
     transform: rotateY( 180deg );
 }
+/* End Flippy Card Section */
 
-/* @media screen and (min-width: 960px) {
-    .scene {
-        display: flex;
-        justify-content: space-around;
-    }
-} */
 /* End Main Section */
 
 
@@ -294,6 +291,15 @@ a#fricon.fr {
     color: white;
 }
 
+a#fricon2.fr {
+    font-size: 40px;
+    color: white;
+}
+
+a#fricon3.fr {
+    font-size: 40px;
+    color: white;
+}
 
 a.fm {
     text-decoration: none;
@@ -324,11 +330,7 @@ display:block;
 }
 /* End FOOTER Section */
 
-/* Media Querries */
-/* @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    } */
+/* Media Querries for mobile views */
 
 @media screen and (max-width: 660px){
 .header {
@@ -365,4 +367,43 @@ display:block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
+}
+
+@media screen and (max-width: 970px){
+    .scene {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 450px 450px 450px;
+        max-width: 100%;
+        min-height: 100vh;
+        margin: auto;
+        padding: 40px 30px;
+        background-color: rgb(211, 211, 211);
+    }
+}
+
+@media screen and (max-width: 670px){
+    .scene {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto  ;
+        max-width: 100%;
+        min-height: 100vh;
+        margin: auto;
+        padding: 40px 30px;
+        background-color: rgb(211, 211, 211);
+    }
+}
+
+@media screen and (max-width: 360px){
+    .scene {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto  ;
+        max-width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(211, 211, 211);
+    }
 }

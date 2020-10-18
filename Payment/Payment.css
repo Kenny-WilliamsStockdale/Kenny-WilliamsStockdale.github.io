@@ -22,6 +22,7 @@ font-size: 25px;
 color: #000000;
 display: block;
 transition: 0.3s;
+font-family: sans-serif;
 }
 
 .sidenav a:hover {
@@ -146,6 +147,18 @@ font-family: sans-serif;
     font-family: sans-serif;
 }
 
+.payl {
+    padding: 0;
+}
+
+.paym {
+    padding: 0;
+}
+
+.payr {
+    padding: 0;
+}
+
 input {
     font-size: 25px;
 }
@@ -255,6 +268,15 @@ a#fricon.fr {
     color: white;
 }
 
+a#fricon2.fr {
+    font-size: 40px;
+    color: white;
+}
+
+a#fricon3.fr {
+    font-size: 40px;
+    color: white;
+}
 
 a.fm {
     text-decoration: none;
@@ -285,12 +307,7 @@ display:block;
 }
 /* End FOOTER Section */
 
-/* Media Querries */
-/* @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    } */
-
+/* Media Querries for mobile views */
 @media screen and (max-width: 660px){
 .header {
     grid-template-columns: 260px auto;
@@ -326,4 +343,71 @@ display:block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
+}
+
+@media screen and (max-width: 1165px){
+    .paybox {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 100px 220px 40px;
+        width: 100%;
+        font-family: sans-serif;
+        justify-content: center;
+    }
+
+    .payl {
+        padding: 40px 20px;
+    }
+
+    .paym {
+        padding: 40px 20px;
+    }
+
+    .payr {
+        padding: 40px 20px;
+    }
+
+    .btnnext {
+        width: auto;
+    }
+
+    .btnprevious {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1164px){
+    .btn {
+        margin: 0 20px 80px 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .payl {
+        padding: 40px 0;
+    }
+
+    .paym {
+        padding: 40px 0;
+    }
+
+    .payr {
+        padding: 40px 0;
+    }
+
+    .paybox {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 0;
+        width: 100%;
+        font-family: sans-serif;
+        justify-content: center;
+    }
+
+    .payicons {
+        margin-left: 10%;
+        padding-top: 50px;
+    }
 }
