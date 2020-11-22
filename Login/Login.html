@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Login.css">
-    <link rel="icon" href="/Images/ArmageddonShoplogoredone1-1.jpg"> <!--Icon for browser tab window-->
+    <link rel="icon" href="/Images/ArmageddonShoplogoredone1-1.jpg">
+    <!--Icon for browser tab window-->
 </head>
 
 <body>
@@ -18,7 +19,8 @@
             <img class="logo" src="/Images/ArmageddonShoplogohorizontal.png" alt="Armageddon paintball shop logo">
         </a>
         <div></div>
-        <ul class="main-hed"> <!--Header Nav Bar-->
+        <ul class="main-hed">
+            <!--Header Nav Bar-->
             <li id="dropDownclick" class="fas fa-bars" onclick="openNav()"></li>
             <li><a class="head" href="/Payment/Payment.html"><i class="fas fa-shopping-cart"></i></a></li>
             <li><a class="head" href="/Login/Login.html">Sign up/ Log in</a></li>
@@ -27,7 +29,8 @@
     </div>
 
     <!-- Side Nav Section -->
-    <div id="mySidenav" class="sidenav"> <!--Hamburger Menu (hidden until responsive)-->
+    <div id="mySidenav" class="sidenav">
+        <!--Hamburger Menu (hidden until responsive)-->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/home_page/home.html">Home</a>
         <a href="/Product/Product.html">Products</a>
@@ -38,79 +41,101 @@
     <!-- End Header Section -->
 
     <!-- Main Section  -->
-        <div class="login-title">
-            <h1>Please login to continue</h1>
-        </div>
-        <div class="login-box">
-            <div class="login-box-left"> <!--Login box section-->
-                <h3 class="Email">Email Address:</h3>
-                <input class="emailbox" type="text" placeholder="Email">
-                <h3 class="Password">Password:</h3>
-                <input class="pasbox" type="text" placeholder="Password">
-                <div class="btn1">
-                    <button class="btnlogin" type="button">Log in</button>
-                    <a class="FP" href="" target="_blank">Forgotten your password?</a>
-                </div>
-            </div>
+    <!-- Login section-->
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" class="txtuser" id="txtuser" placeholder="Enter Username" name="uname" required>
 
-            <div class="login-box-right"> <!--Create an account box section-->
-                <p class="p1">Create an account it's easy, free and only takes a moment.</p>
-                <div class="btn2">
-                <button class="btncreate" type="button">Create an account</button>
-                </div>
-                <p class="p2">Creating an account enables you to:</p>
-                <ul>
-                    <li class="li2">Place orders without re-entering your details</li>
-                    <li class="li2">Check the status of your orders</li>
-                    <li class="li2">Rate and review products</li>
-                    <li class="li2">Add products to your Wish List</li>
-                    
-                </ul> 
-                
-            </div>
-        </div>
-    <!-- End Main Section -->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" class="txtpass" id="txtpwd" placeholder="Enter Password" name="psw" required>
 
-    <!-- Footer  -->
-    <div class="Footer">
-        <div class="footer-left">
-            <div class="logopos"><img class="logof" src="/Images/ArmageddonShoplogoredone-white.png" alt="Footer Logo">
-                <p id="fl" style="color:white;">Need the best gear in the game then look no further!</p>
+        <p class="message"></p>
+        <button id="submit" type="submit"onclick="myFunc()">Login</button>
+        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="CA">Create an account</a>
+        
+        
+    </div>
+    <!-- Login Section End-->
+    <!-- Signup Section -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <div class="modal-content" action="/action_page.php">
+            <div class="container1">
+                <form id="form" class="form">
+                    <h2>Sign up</h2>
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter username" />
+                        <small> Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Enter password again" />
+                        <small>Error message</small>
+                    </div>
+                    <button class="button1" type="submit">Submit</button>
+
+                </form>
             </div>
-        </div>
-        <div class="footer-middle">
-            <div><a class="fm">General</a><br> <!--Footer Navigation-->
-                <a class="fm" href="/Product/Product.html">Products</a><br></div>
-            <div><a class="fm" href="/Login/Login.html">Signup/ Login</a><br>
-                <a class="fm" href="/Payment/Payment.html">Cart</a></div>
-        </div>
-        <div class="footer-right"> <!--Contact inforamtion Area-->
-            <div>
-                <a class="fr">
-                    Contact us<br><br>Need help with something?<br>Get in touch.<br><br>
-                </a>
-                <a class="fr" href="mailto:paintball.nelson@xtra.co.nz" target="_blank">
-                    paintball.nelson@xtra.co.nz</a><br><br>
-                <a class="fr" href="tel:+6435418452" target="_blank">03 541 8452</a><br><br>
-                <a class="fr" id="fricon" href="https://www.facebook.com/Armageddonpbnz/" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a class="fr" id="fricon2" href="https://www.youtube.com/channel/UCKRhmADWDk8Iqz3KjMfqsFg"
-                    target="_blank">
-                    <i class="fab fa-youtube-square"></i>
-                </a>
-                <a class="fr" id="fricon3" href="" target="_blank">
-                    <i class="fab fa-twitter-square"></i>
-                </a>
-            </div>
-            <p class="fl1" id="copyright">
-                © 2020 Armageddon Paintball Shop.
-            </p>
         </div>
     </div>
-    <!-- End Footer Section -->
-    <script src="Login.js" async defer></script>
-    <script src="https://kit.fontawesome.com/ecb28debc0.js" crossorigin="anonymous"></script>
+            <!-- Signup Section End-->
+            <!-- End Main Section -->
+
+            <!-- Footer  -->
+            <div class="Footer">
+                <div class="footer-left">
+                    <div class="logopos"><img class="logof" src="/Images/ArmageddonShoplogoredone-white.png"
+                            alt="Footer Logo">
+                        <p id="fl" style="color:white;">Need the best gear in the game then look no further!</p>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div><a class="fm">General</a><br>
+                        <!--Footer Navigation-->
+                        <a class="fm" href="/Product/Product.html">Products</a><br></div>
+                    <div><a class="fm" href="/Login/Login.html">Signup/ Login</a><br>
+                        <a class="fm" href="/Payment/Payment.html">Cart</a></div>
+                </div>
+                <div class="footer-right">
+                    <!--Contact information Area-->
+                    <div>
+                        <a class="fr">
+                            Contact us<br><br>Need help with something?<br>Get in touch.<br><br>
+                        </a>
+                        <a class="fr" href="mailto:paintball.nelson@xtra.co.nz" target="_blank">
+                            paintball.nelson@xtra.co.nz</a><br><br>
+                        <a class="fr" href="tel:+6435418452" target="_blank">03 541 8452</a><br><br>
+                        <a class="fr" id="fricon" href="https://www.facebook.com/Armageddonpbnz/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a class="fr" id="fricon2" href="https://www.youtube.com/channel/UCKRhmADWDk8Iqz3KjMfqsFg"
+                            target="_blank">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a class="fr" id="fricon3" href="" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </div>
+                    <p class="fl1" id="copyright">
+                        © 2020 Armageddon Paintball Shop.
+                    </p>
+                </div>
+            </div>
+            <!-- End Footer Section -->
+            <script src="Login.js" async defer></script>
+            <script src="https://kit.fontawesome.com/ecb28debc0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -122,108 +122,230 @@ a.head {
 body {
     background-color: rgb(211, 211, 211);
 }
-.login-title {
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    margin-top: 50px;
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-.login-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    font-family: sans-serif;
-    margin: 60px;
-}
-
-.Password {
-    margin-top: 20px;
-}
-
-.FP {
-    color:#585858;
-    text-decoration: none;
-    float: right;
-    margin-top: 54px;
-}
-
-.li2 {
-    list-style: initial;
-    overflow: visible;
-    float: none;
-    margin-left: 40px;
-}
-
-input {
-    font-size: 25px;
-    margin-top: 20px;
-}
-
-.login-box-right {
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 180px;
-    border: 1px solid #474747;
-    border-radius: 4px;
-    background-color: #fafafa;
-}
-
-.login-box-left {
-    padding: 10px;
-    margin-right: 20px;
-    margin-left: 180px;
-    border: 1px solid #474747;
-    border-radius: 4px;
-    background-color: #fafafa;
-}
-
-.btnlogin {
+  /* Set a style for all buttons */
+button {
+    background-color: #d8382d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
     font-size: 20px;
+}
+
+button:hover {
+    background-color: #f44336;
+}
+.container {
+    padding: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: 5em 30%;
+    background-color: #f2f2f2;
     font-family: sans-serif;
-    border: none;
-    background-color: #dbdbdb;
-    cursor: pointer;
-    outline: none;
-    width: 15%;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px #999;
-    margin-top: 40px;
 }
 
-.btncreate {
-    font-size: 18px;
+.message {
+    text-align: center;
+}
+
+.CA {
+    text-decoration: none;
+    color:#585858;
+    cursor: pointer;
+}
+
+b {
+    font-size: 24px;
+}
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* Full-width input fields */
+.form-control input[type=text1],
+.form-control input[type=password1] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.form-control input[type=text1]:focus,
+.form-control input[type=password1]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.button1:hover {
+    background-color: #f44336;
+}
+
+/* Add padding to container elements */
+.container1 {
+    padding: 15px;
     font-family: sans-serif;
-    border: none;
-    background-color: #dbdbdb;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 10%;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding: 50px 0;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 15px;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
     cursor: pointer;
-    outline: none;
-    width: 35%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h2 {
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px #999;
-    margin: 20px;
+    margin: 0 0 20px;
 }
 
-.btnlogin:hover {
-    background-color: #f44336
+.form {
+    padding: 30px 40px;
 }
 
-.btnlogin:active {
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.form-control label {
+    /* color: #777; */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(226, 226, 226);
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
     background-color: #d8382d;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.btncreate:hover {
-    background-color: #f44336
-}
-
-.btncreate:active {
-    background-color: #d8382d;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    border: 2px solid #d8382d;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 /* End Main Section */
@@ -386,7 +508,55 @@ display:block;
         font-size: smaller;
     }
 
-    input {
+    /* input {
         font-size: 23px;
+    } */
+}
+
+@media screen and (max-width: 920px){
+    .FP{
+    float: none;
+    display: block;
+    color: #585858;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    .CA{
+    display: block;
+    color: #585858;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    b {
+        font-size: 20px;
+    }
+
+    .container{
+        margin: 5% 20%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .modal-content{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .modal-content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .form-control input{
+        font-size: 12px;
     }
 }
