@@ -19,6 +19,7 @@ cart.forEach( (itm, idx) => {
     let rowElm = document.createElement('div')
     // adding class to div
     rowElm.classList.add('cart-row')
+    rowElm.classList.add('delete')
     // creating id for that item based off the stored item name
     rowElm.id = `itemID-${itm[0]}`
     // filling div with this stuff.   setting the name price and ammount from stored cart doing it for each item
@@ -124,4 +125,8 @@ function myFunc(){
     localStorage.setItem('state', state.value);
     localStorage.setItem('zip', zip.value);
     alert("Thank you for your purchase!");
+
+    //delete cart
+    document.querySelector('.delete').remove();
+    localStorage.removeItem('cart');
 }
