@@ -325,8 +325,16 @@ display:block;
 }
 
 .footer-middle a{
-    /* padding: 0 80px; */
+    padding: 10px 0;
     text-align: center;
+}
+
+.fas.fa-envelope-square {
+    font-size: 25px;
+}
+
+.fas.fa-phone-square {
+    font-size: 25px;
 }
 /* End FOOTER Section */
 

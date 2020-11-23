@@ -445,9 +445,18 @@ display:block;
 }
 
 .footer-middle a{
-    /* padding: 0 80px; */
+    padding: 10px 0;
     text-align: center;
 }
+
+.fas.fa-envelope-square {
+    font-size: 25px;
+}
+
+.fas.fa-phone-square {
+    font-size: 25px;
+}
+
 /* End FOOTER Section */
 
 /* Media Querries for responsiveness*/
@@ -482,9 +491,7 @@ display:block;
     grid-template-rows: auto;
 }
 .footer-middle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    padding: 10px;
 }
 }
 
