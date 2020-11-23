@@ -284,6 +284,8 @@ a.head {
     max-width: 550px;
     position: relative;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
   /* Hide the images by default */
@@ -528,6 +530,9 @@ display:block;
 @media screen and (max-width: 660px){
     .imagetxt h3 {
         display: none;
+    }
+    #copyright {
+        float: none;
     }
 }
 
